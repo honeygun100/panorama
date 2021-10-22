@@ -94,7 +94,7 @@ for i = 1:size(image_1,1)
     for j = 1:size(image_1,2)
         x_prime = round(f * tan((x(j)-x_c)/f) + x_c);
         y_prime = round((y(i)-y_c)/cos((x(j)-x_c)/f) + y_c );
-        %disp(y_prime)
+        %disp(y_prime)k
         if x_prime < 1 || x_prime > Nx || y_prime < 1 || y_prime > Ny
             image_1_projected(i,j,:) = zeros(1,1,3);
         else
